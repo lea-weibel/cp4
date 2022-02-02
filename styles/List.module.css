@@ -1,0 +1,27 @@
+.listContainerClosed {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+}
+
+.listContainerOpen {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.mainContainer {
+  margin: 1rem auto;
+  width: 90%;
+  display: flex;
+}
+
+.listTitle {
+  margin-left: 2rem;
+}
+
+.titleContainer {
+  justify-content: space-between;
+  align-items: baseline;
+}

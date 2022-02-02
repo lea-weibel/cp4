@@ -1,0 +1,31 @@
+.section {
+  width: 90%;
+  height: 40%;
+  background-color: #7cc1ac;
+  margin: 2rem auto;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.title {
+  color: white;
+  margin: 0 0 1rem 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.addBtn {
+  width: 4rem;
+  height: 2rem;
+  border-radius: 8px;
+  margin-left: -4rem;
+}
+
+.txtInput {
+  width: 100%;
+  height: 2rem;
+  border-radius: 8px;
+}

@@ -1,0 +1,11 @@
+.header {
+  height: 8vh;
+  background-color: #00989c;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 0 5%;
+}
