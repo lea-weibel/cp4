@@ -4,8 +4,25 @@
   color: white;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
   margin: 0 5%;
+}
+
+.settingsBtn {
+  background-color: #85cdca;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+.settingsBtn:hover {
+  background-color: white;
+  border: #85cdca;
+  color: #85cdca;
 }

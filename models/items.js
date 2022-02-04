@@ -16,17 +16,18 @@ async function getOneItem(itemId) {
 }
 
 // UPDATE
-async function updateItem(itemId, body) {
-  const newAttributes = {
-    category: body.category,
-    content: body.content,
-    done: body.done,
-  };
+async function updateItem({ itemId, done }) {
+  console.log("update item", itemId, done);
+  // const newAttributes = {
+  //   category: body.category,
+  //   content: body.content,
+  //   done: body.done,
+  // };
 
   return collection.updateOne(
     { _id: ObjectId(itemId) },
     {
-      $set: newAttributes,
+      $set: { done: done },
     }
   );
 }

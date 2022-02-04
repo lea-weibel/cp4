@@ -13,4 +13,23 @@ async function handlePost(req, res) {
   }
 }
 
-export default base().get(handleGet).post(handlePost);
+async function handlePut(req, res) {
+  if (req.body) {
+    console.log("handle patch", req.body);
+    const modifiedData = await Items.updateItem(req.body);
+    res.status(200).send(modifiedData);
+  }
+}
+
+async function handleDelete(req, res) {
+  if (req.body) {
+    const deletedData = await Items.deleteItem(req.body.itemId);
+    res.status(200).send(deletedData);
+  }
+}
+
+export default base()
+  .get(handleGet)
+  .post(handlePost)
+  .put(handlePut)
+  .delete(handleDelete);
